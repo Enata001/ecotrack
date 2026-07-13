@@ -1,0 +1,40 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "ecotrack-6179a",
+          "appId": "1:433977950297:android:73b6572887989fff977148",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "ecotrack-6179a",
+          "appId": "1:433977950297:ios:7029c6567301253a977148",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "ecotrack-6179a",
+          "configurations": {
+            "android": "1:433977950297:android:73b6572887989fff977148",
+            "ios": "1:433977950297:ios:7029c6567301253a977148"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "rules": "firebase/firestore.rules",
+    "indexes": "firebase/firestore.indexes.json"
+  },
+  "functions": [
+    {
+      "source": "firebase/functions",
+      "codebase": "default"
+    }
+  ]
+}

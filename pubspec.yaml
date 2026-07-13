@@ -1,0 +1,72 @@
+name: ecotrack
+description: "On-demand waste pickup app (User + Collector roles)"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^3.0.0
+
+  # Firebase
+  firebase_core: ^4.0.0
+  firebase_auth: ^6.0.0
+  cloud_firestore: ^6.0.0
+  firebase_messaging: ^16.0.0
+  cloud_functions: ^6.0.0
+
+  # Maps / location
+  google_maps_flutter: ^2.9.0
+  geolocator: ^14.0.3
+  geocoding: ^5.0.0
+
+  # UI / responsive
+  flutter_screenutil: ^5.9.3
+  google_fonts: ^8.1.0
+
+  # Utilities
+  intl: any
+  logger: ^2.6.2
+  connectivity_plus: ^7.0.0
+  shared_preferences: ^2.5.3
+
+  # Notifications UI
+  toastification: ^3.0.3
+  firebase_storage: ^13.4.3
+  image_picker: ^1.2.3
+  url_launcher: ^6.3.2
+  flutter_local_notifications: ^22.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/cfg/
+    - assets/images/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+
+  image_path: "assets/images/ecotrack_icon.png"
+
+  # Android adaptive icon
+  adaptive_icon_foreground: "assets/images/ecotrack_foreground.png"
+  adaptive_icon_background: "assets/images/ecotrack_background.png"
+
+  # iOS
+  remove_alpha_ios: true
+
+  # Android
+  min_sdk_android: 21
