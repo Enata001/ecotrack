@@ -37,6 +37,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCu-cwYlVOr-edh1ULB0Pc9fajmnZmTI6I" />
         <!-- Tells the system which channel to use for FCM notifications that
+
              arrive while the app is backgrounded/killed. Must match the
              channel id created in FcmService (high_importance_channel),
              whose "max" importance is what makes it pop up as a heads-up
